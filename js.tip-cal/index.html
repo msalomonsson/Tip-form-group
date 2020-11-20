@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="showcase">
+            <div class="card">
+                <h3 class="heading">Tip calculator</h3>
+                <form class="card-body">
+                    <div class="input-group1">
+                        <span class="box-1">
+                            <p class="para-1">How much Was Your Bill ?</p>
+                            <i class="fas fa-dollar-sign icon"></i>
+                            <input type="number" class="input" id="input-cost">
+                        </span>
+                    </div>
+
+                    <div class="input-group2">
+                        <span class="box-2">
+                            <p class="para-2">How Many People Sharing The Bill ?</p>
+                            <i class="fas fa-user icon"></i>
+                            <input type="number" class="input" id="input-people">
+                        </span>
+                    </div>
+
+                    <div class="input-group3">
+                        <span class="box-3">
+                            <p class="para-3">How Was Your Service</p>
+                            <select name="value" id="value" class="service">
+                                <option value="0">Choose..</option>
+                                <option value="20">Great - 20%</option>
+                                <option value="10">Good - 10%</option>
+                                <option value="2">Bad - 2%</option>
+                            </select>
+                        </span>
+                    </div>
+
+                    <div class="calculate">
+                        <button class="btn" type="submit">Calculate</button>
+                    </div>
+
+                    <div class="loading">
+                        <img src="/img/loadingimg.gif" alt="loading img" class="img">
+                    </div>
+
+                    <div class="result">
+                        <h2 class="tipAmount"></h2>
+                        <h2 class="totalAmount"></h2>
+                        <h2 class="eachAmount"></h2>
+                    </div>
+                </form>    
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/app.js"></script>
+</body>
+</html>
